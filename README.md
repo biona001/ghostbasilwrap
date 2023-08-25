@@ -13,3 +13,9 @@ This repo contains experimental code to call C++ from Julia.
 2. Use [BinaryBuilder.jl](https://github.com/JuliaPackaging/BinaryBuilder.jl) to create a `jll` package (e.g. `ghostbasil_jll.jl`) that enables usage of ghostbasil functions in Julia directly (this will require ghostbasil to be publically available)
 3. Host this `jll` on [Yggdrasil](https://github.com/JuliaPackaging/Yggdrasil)
 4. Use [PackageCompiler.jl](https://github.com/JuliaLang/PackageCompiler.jl) to bundle all source code (maybe also pre-computed knockoff statistics) into an [App](https://julialang.github.io/PackageCompiler.jl/stable/apps.html) which can be used by potentially users for re-analysis of GWAS summary statistics data. 
+
+## Compiler/software versions
+This was tested on Sherlock with 
++ `cmake/3.11.1`
++ `gcc/12.1.0`
++ `julia/1.8.4`
